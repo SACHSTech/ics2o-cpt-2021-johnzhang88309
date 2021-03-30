@@ -34,7 +34,8 @@ if play.lower().strip() == "yes":
     print("You'll be able to play shortly.")
     time.sleep(4)
   
-    #Start of the story. This the main starting point.
+    #Start of the story. Mainly text with a few loops and input statements.
+
     print("")
     print("--------")
     print("Prologue") 
@@ -43,11 +44,13 @@ if play.lower().strip() == "yes":
     print("TEN YEARS BEFORE")
     print("")
     time.sleep (5)
+    character_name = input("What is your name: ")
+    time.sleep (2)
     print("After a long and hard day at school you come home to watch your favourite gameshow.")
     time.sleep(3)
     print('You tell yourself "I wanna make it up there one day!"')
     time.sleep(3)  
-    print("The caster reveals that in order to get a HUGE prize you need to answer ALL 30 questions correctly. He also reveals that if you mess up even one question there will be a HUGE punishment. ") 
+    print("The host reveals that in order to get a HUGE prize you need to answer ALL 30 questions correctly. He also reveals that if you mess up even one question there will be a HUGE punishment. ") 
     time.sleep (5)
     print('You see this super nerdy kid step on stage to answer questions and you think to yourself "BRUH That is literally me!"')
     time.sleep (3)
@@ -55,7 +58,7 @@ if play.lower().strip() == "yes":
     time.sleep (3)
     print('You spit your water out and start laughing the hardest you have ever laughed before. You scream out, "HOW IN THE WORLD DID HE GET INTO THE GAMESHOW!?!"')
     time.sleep (3)
-    print("The castor starts spitting out questions.")
+    print("The host starts spitting out questions.")
     time.sleep (3)
     print("Question after question the homeless looking guy answers everything correctly while the super nerdy kid couldn't seem to even get a single question right")
     time.sleep (5)
@@ -72,7 +75,7 @@ if play.lower().strip() == "yes":
     print("10 YEARS PASS")
     print("You are now a junior in high school. You went from a nerd to a huge idiot. Your parents also kicked you out of the house for watching too much anime and not studying enough.")
     time.sleep (3)
-    print("You are now a couch hopper and all your friends despise you.")
+    print("You are a couch hopper and all your friends despise you.")
     time.sleep (3)
     print("When all seems lost you get an email inviting you to a huge gameshow.")
     time.sleep (3)
@@ -104,7 +107,21 @@ if gameshow_answer.lower().strip() == "yes":
     time.sleep (3)
     print('You tell yourself "I am going to prove all these people wrong and win this gameshow!"')
     time.sleep (3)
-    print("")
+    print("As you step on stage you see your opponent, a slim, tall nerd. You feel a bit nervous but you also remind yourself that you should not judge a book by its cover because of what you saw on TV 10 years ago")
+    time.sleep (5)
+    print('You are insanely focussed and you hear the host start speaking. "Please welcome ' + character_name + ' and Sean who will be your contestants today!"')
+    time.sleep (5)
+    print(character_name + " and Sean please tell the audience a little bit about yourself")
+    time.sleep (5)
+    information_about_player = input("Tell the audience a little bit about yourself: ")
+    print(information_about_player)
+    time.sleep (5)
+    print("And you Sean?")
+    time.sleep (5)
+    print("Hi, my name is Sean and some of my hobbies are studying, watching videos on how to do math and coding. I am very confident that I will win this gameshow!")
+    print('After we talked to the audience for a bit the host told us the rules of the gameshow. "You must answer every question correctly to get a prize or you will get a huge punishment."')
+    print("Then he immediately started spitting out questions")
+
     
 #elif statement to quit game if user types no
 elif play.lower().strip() == "no":
